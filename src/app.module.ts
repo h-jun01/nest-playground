@@ -7,6 +7,8 @@ import { CatsController } from './cats.controller';
 // importsの配列の中に他のmoduleを入れると別のmoduleをimportすることが可能。
 @Module({
   imports: [],
+  // コントローラーはmoduleファイルで明記しておく必要あり
+  // これをやらないとNestJSはコントローラーを読んでくれない
   controllers: [AppController, CatsController],
   providers: [AppService],
 })

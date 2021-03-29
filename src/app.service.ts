@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, Param } from '@nestjs/common';
 
 // このデコレータでproviderとして認識される。
 // そして、controllerのconstructorからDIされる。
@@ -11,5 +11,10 @@ export class AppService {
 
   findAll(): string {
     return 'This action returns all cats';
+  }
+
+  findOne(id: string): string {
+    console.log(id);
+    return `This action returns a #${id} cat`;
   }
 }
