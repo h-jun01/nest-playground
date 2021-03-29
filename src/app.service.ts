@@ -8,4 +8,8 @@ export class AppService {
   getHello(): string {
     return 'Hello World!';
   }
+
+  findAll(): string {
+    return 'This action returns all cats';
+  }
 }
