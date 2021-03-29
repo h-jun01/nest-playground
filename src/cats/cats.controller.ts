@@ -1,5 +1,5 @@
 import { Controller, Get, Param } from '@nestjs/common';
-import { AppService } from './app.service';
+import { AppService } from '../app.service';
 
 @Controller('cats') // この部分はURLに含まれる
 export class CatsController {

@@ -1,4 +1,4 @@
-import { Injectable, Param } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 
 // このデコレータでproviderとして認識される。
 // そして、controllerのconstructorからDIされる。
